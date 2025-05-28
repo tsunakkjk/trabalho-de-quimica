@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Questões Respondidas - Cinética Química</title>
+    <title>Quiz - Cinética Química</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,62 +67,137 @@
 </head>
 <body>
 
-<header>
-    <h1>Questões Respondidas - Cinética Química</h1>
+ <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <div style="
+            background-color: white;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 32px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        ">
+            MV🧪
+        </div>
+        <h1 style="margin: 0; color: white;">Quiz de Cinética Química</h1>
+    </div>
 </header>
 
 <nav>
     <a href="index.html">Conceito</a>
     <a href="fatores.html">Fatores</a>
     <a href="exemplos.html">Exemplos</a>
-    <a href="questoes.html">Questões</a>
+    <a href="questoes.html">Quiz</a>
 </nav>
 
 <main>
     <section>
-        <h2>Questões sobre Cinética Química</h2>
+        <h2>Quiz: Teste seus conhecimentos em Cinética Química</h2>
 
         <div class="question">
-            <h3>1. O que é a cinética química?</h3>
-            <div class="answer">
-                <strong>Resposta:</strong> É o estudo da velocidade das reações químicas e dos fatores que influenciam essa velocidade.
-            </div>
+            <h3>1. O que acontece com a velocidade de uma reação quando a temperatura aumenta?</h3>
+            <form id="q1">
+                <label><input type="radio" name="q1" value="a"> Ela diminui.</label><br>
+                <label><input type="radio" name="q1" value="b"> Ela permanece constante.</label><br>
+                <label><input type="radio" name="q1" value="c"> Ela aumenta.</label><br>
+                <label><input type="radio" name="q1" value="d"> Ela para completamente.</label>
+            </form>
+            <div class="answer" id="a1"></div>
         </div>
 
         <div class="question">
-            <h3>2. Como a temperatura influencia a velocidade da reação?</h3>
-            <div class="answer">
-                <strong>Resposta:</strong> O aumento da temperatura faz com que as moléculas se movam mais rápido, aumentando a frequência e a energia das colisões, acelerando a reação.
-            </div>
+            <h3>2. Qual é a função de um catalisador?</h3>
+            <form id="q2">
+                <label><input type="radio" name="q2" value="a"> Aumentar a energia de ativação.</label><br>
+                <label><input type="radio" name="q2" value="b"> Reduzir a temperatura da reação.</label><br>
+                <label><input type="radio" name="q2" value="c"> Diminuir a energia de ativação.</label><br>
+                <label><input type="radio" name="q2" value="d"> Reagir com os produtos.</label>
+            </form>
+            <div class="answer" id="a2"></div>
         </div>
 
         <div class="question">
-            <h3>3. Qual a função do catalisador numa reação química?</h3>
-            <div class="answer">
-                <strong>Resposta:</strong> O catalisador diminui a energia de ativação da reação, acelerando a velocidade sem ser consumido durante o processo.
-            </div>
+            <h3>3. O que são colisões efetivas?</h3>
+            <form id="q3">
+                <label><input type="radio" name="q3" value="a"> Colisões sem energia suficiente.</label><br>
+                <label><input type="radio" name="q3" value="b"> Colisões que não formam produtos.</label><br>
+                <label><input type="radio" name="q3" value="c"> Colisões com orientação e energia adequadas para a reação.</label><br>
+                <label><input type="radio" name="q3" value="d"> Colisões entre produtos finais.</label>
+            </form>
+            <div class="answer" id="a3"></div>
+        </div>
+
+        <!-- Novas perguntas -->
+
+        <div class="question">
+            <h3>4. Como a concentração dos reagentes influencia a velocidade da reação?</h3>
+            <form id="q4">
+                <label><input type="radio" name="q4" value="a"> Quanto maior a concentração, menor a velocidade.</label><br>
+                <label><input type="radio" name="q4" value="b"> A concentração não afeta a velocidade.</label><br>
+                <label><input type="radio" name="q4" value="c"> Quanto maior a concentração, maior a velocidade.</label><br>
+                <label><input type="radio" name="q4" value="d"> A velocidade é inversamente proporcional à concentração.</label>
+            </form>
+            <div class="answer" id="a4"></div>
         </div>
 
         <div class="question">
-            <h3>4. Por que a concentração dos reagentes afeta a velocidade da reação?</h3>
-            <div class="answer">
-                <strong>Resposta:</strong> Quanto maior a concentração, maior o número de moléculas disponíveis para colidir, aumentando a frequência das colisões e, consequentemente, a velocidade da reação.
-            </div>
+            <h3>5. Qual fator NÃO influencia a velocidade de uma reação química?</h3>
+            <form id="q5">
+                <label><input type="radio" name="q5" value="a"> Temperatura.</label><br>
+                <label><input type="radio" name="q5" value="b"> Pressão (em gases).</label><br>
+                <label><input type="radio" name="q5" value="c"> Cor da solução.</label><br>
+                <label><input type="radio" name="q5" value="d"> Catalisadores.</label>
+            </form>
+            <div class="answer" id="a5"></div>
         </div>
 
         <div class="question">
-            <h3>5. O que são colisões efetivas?</h3>
-            <div class="answer">
-                <strong>Resposta:</strong> São colisões entre moléculas que possuem energia e orientação adequadas para que ocorra a reação química.
-            </div>
+            <h3>6. O que significa “energia de ativação”?</h3>
+            <form id="q6">
+                <label><input type="radio" name="q6" value="a"> Energia liberada pela reação.</label><br>
+                <label><input type="radio" name="q6" value="b"> Energia necessária para iniciar a reação.</label><br>
+                <label><input type="radio" name="q6" value="c"> Energia armazenada nos reagentes.</label><br>
+                <label><input type="radio" name="q6" value="d"> Energia perdida durante a reação.</label>
+            </form>
+            <div class="answer" id="a6"></div>
         </div>
 
+        <button onclick="checkAnswers()" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #0066cc; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Verificar Respostas
+        </button>
     </section>
 </main>
 
-<footer>
-    <p>&copy; Stargirls - 2B</p>
-</footer>
+<script>
+    function checkAnswers() {
+        const respostas = {
+            q1: 'c',
+            q2: 'c',
+            q3: 'c',
+            q4: 'c',
+            q5: 'c',
+            q6: 'b'
+        };
 
-</body>
-</html>
+        for (let q in respostas) {
+            const radios = document.getElementsByName(q);
+            let respostaUsuario = '';
+            for (let r of radios) {
+                if (r.checked) respostaUsuario = r.value;
+            }
+            const resultado = document.getElementById('a' + q.slice(1));
+            if (respostaUsuario === respostas[q]) {
+                resultado.innerHTML = '✅ Resposta correta!';
+                resultado.style.color = 'green';
+            } else if (respostaUsuario === '') {
+                resultado.innerHTML = '⚠️ Por favor, selecione uma resposta.';
+                resultado.style.color = 'orange';
+            } else {
+                resultado.innerHTML = '❌ Resposta incorreta.';
+                resultado.style.color = 'red';
+            }
+        }
+    }
+</script>
+
